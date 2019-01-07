@@ -90,7 +90,7 @@ export default class BaseDialog extends BaseComponent {
         if (this.state._isShow || (this.props && this.props.removeSubviews === false)) {
             return <Animated.View
                 style={{
-                    position: 'absolute', left: 0, right: 0, top: 0, bottom: 0,
+                    position: 'absolute', left: 0, right: 0, top: 0, bottom: 0, zIndex: 999,
                     backgroundColor: 0x00000050, opacity: this._path.interpolate({
                         inputRange: [0, 0.5, 1],
                         outputRange: [0, 1, 1]
